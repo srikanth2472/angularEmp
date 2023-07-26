@@ -1,0 +1,31 @@
+
+<div>
+    <button (click) ="gotoback()" style="float: right;">back</button>
+</div>
+<div class="col-mid-1 offset-md-1">
+
+<h2>Create Employee Form</h2>
+
+<form (ngSubmit)="onSubmit()">  
+     <div class="form-group">
+        <label>Firs tName</label>
+        <input type="text" class="form-control" id="firstName" [(ngModel)]="emp1.firstName" name="firstName">
+      </div>
+      <div class="form-group">
+        <label>Last tName</label>
+        <input type="text" class="form-control" id="lasttName" [(ngModel)]="emp1.lastName" name="lastName">
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" id="email" [(ngModel)]="emp1.email" name="email">
+      </div>
+      <br>
+      <div class="form-group">
+        <input type="date" [(ngModel)]="emp1.date" name="date">
+      </div>
+
+      <button class="btn btn-primary mt-3">
+                submit
+      </button>
+</form>
+</div>
